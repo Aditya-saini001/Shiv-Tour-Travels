@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://shivtourandtravels.com/sitemap.xml',
+    sitemap: 'https://shivshubhtourtravels.com/sitemap.xml',
   };
 }

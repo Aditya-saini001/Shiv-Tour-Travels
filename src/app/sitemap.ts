@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://shivtourandtravels.com';
+  const baseUrl = 'https://shivshubhtourtravels.com';
   const currentDate = new Date();
 
   const routes = [
@@ -17,12 +17,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/testimonials',
     '/faq',
     '/contact',
+    '/terms-conditions',
   ];
 
   return routes.map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: currentDate,
     changeFrequency: route === '' ? 'daily' : 'weekly',
-    priority: route === '' ? 1.0 : route.startsWith('/packages') ? 0.9 : 0.8,
+    priority: route === '' ? 1.0 : route.startsWith('/packages') ? 0.9 : route === '/terms-conditions' ? 0.5 : 0.8,
   }));
 }

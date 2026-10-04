@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://shivshubhtourtravels.com"),
   title: "Best Taxi Service in Dehradun | Shiv Shubh Tour & Travels | 24/7 Cab Booking",
   description:
-    "Shiv Shubh Tour & Travels offers the best taxi service in Dehradun. 24/7 local cabs, Jolly Grant Airport taxi from ₹899, Dehradun to Delhi from ₹4000, Mussoorie, Rishikesh, Haridwar & Char Dham Yatra. Fixed fares, no surge pricing. Call +91 9084712392.",
+    "Shiv Shubh Tour & Travels offers the best taxi service in Dehradun. 24/7 local cabs, Jolly Grant Airport taxi from ₹899, Dehradun to Delhi from ₹4,000, Mussoorie, Rishikesh, Haridwar & Char Dham Yatra. Fixed fares, verified drivers, zero surge pricing. Call +91 9084712392.",
   keywords: [
     "best taxi service in Dehradun",
     "taxi service in dehradun",
@@ -20,10 +20,16 @@ export const metadata: Metadata = {
     "dehradun to delhi taxi",
     "dehradun to mussoorie cab",
     "jolly grant airport taxi",
+    "dehradun airport cab",
     "dehradun to rishikesh taxi",
+    "dehradun to haridwar taxi",
     "char dham yatra taxi dehradun",
+    "char dham yatra package from dehradun",
     "outstation taxi dehradun",
-    "car rental dehradun",
+    "car rental dehradun with driver",
+    "innova crysta dehradun",
+    "dehradun to noida cab",
+    "dehradun to chandigarh taxi",
     "shiv shubh tour and travels",
     "shiv shubh travels dehradun",
   ],
@@ -54,7 +60,7 @@ export const metadata: Metadata = {
         url: "/images/logo.jpg",
         width: 800,
         height: 800,
-        alt: "Shiv Shubh Tour & Travels",
+        alt: "Shiv Shubh Tour & Travels Logo",
       }
     ],
   },
@@ -103,6 +109,13 @@ export default function RootLayout({
       "@type": "GeoCoordinates",
       "latitude": "30.2762",
       "longitude": "77.9892"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "1250",
+      "bestRating": "5",
+      "worstRating": "1"
     },
     "priceRange": "₹899 - ₹62000",
     "openingHours": "Mo-Su 00:00-23:59",
@@ -153,6 +166,18 @@ export default function RootLayout({
     }
   };
 
+  const webSiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Shiv Shubh Tour & Travels",
+    "url": "https://shivshubhtourtravels.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://shivshubhtourtravels.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -191,6 +216,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
         />
         <script
           type="application/ld+json"

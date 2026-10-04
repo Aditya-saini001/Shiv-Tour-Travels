@@ -136,6 +136,12 @@ export default function Footer() {
                   <span>Contact Office</span>
                 </Link>
               </li>
+              <li>
+                <Link href="/terms-conditions" className="hover:text-taxi-400 text-taxi-400/90 font-semibold transition-colors flex items-center gap-1.5">
+                  <ArrowRight className="w-3 h-3 text-taxi-400" />
+                  <span>Terms & Conditions</span>
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -193,12 +199,16 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Copyright without "Built with Next.js" */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-          <p>© {new Date().getFullYear()} Shiv Shubh Tour & Travels. All Rights Reserved.</p>
-          <p className="text-slate-400">
-            Dehradun, Uttarakhand | 24/7 Cab & Taxi Services
-          </p>
+        {/* Bottom Copyright & Prominent Terms & Conditions Link */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+          <p className="text-slate-400">© {new Date().getFullYear()} Shiv Shubh Tour & Travels. All Rights Reserved.</p>
+          <Link
+            href="/terms-conditions"
+            className="text-sm font-extrabold text-taxi-400 hover:text-taxi-300 underline underline-offset-4 tracking-wide transition-colors flex items-center gap-1.5 bg-taxi-500/10 px-4 py-2 rounded-xl border border-taxi-500/30 hover:bg-taxi-500/20"
+          >
+            <span>Terms and Conditions</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </div>
     </footer>

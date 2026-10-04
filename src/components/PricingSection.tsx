@@ -41,6 +41,7 @@ const routes: RouteCard[] = [
     type: 'One Way Pick/Drop',
     popular: true,
     link: '/pricing',
+    image: '/images/airport.jpg',
   },
   {
     title: 'Dehradun to Saharanpur Taxi',
@@ -48,6 +49,7 @@ const routes: RouteCard[] = [
     price: '₹1,899',
     type: 'One Way Pick/Drop',
     link: '/pricing',
+    image: '/images/saharanpur.jpg',
   },
   {
     title: 'Delhi to Mussoorie Taxi',
@@ -63,6 +65,7 @@ const routes: RouteCard[] = [
     price: '₹3,899',
     type: 'One Way Pick/Drop',
     link: '/pricing',
+    image: '/images/noida.jpg',
   },
   {
     title: 'Dehradun to Haridwar Taxi',
@@ -96,6 +99,22 @@ const routes: RouteCard[] = [
     type: 'One Way Pick/Drop',
     link: '/pricing',
     image: '/images/chandigarh.jpg',
+  },
+  {
+    title: 'Dehradun to Auli Skiing Taxi',
+    desc: 'Breathtaking snow journey to Auli and Joshimath. Rugged SUVs for mountain snow roads and cable car stations.',
+    price: '₹9,000',
+    type: 'One Way Pick/Drop',
+    link: '/packages',
+    image: '/images/auli.webp',
+  },
+  {
+    title: 'Dehradun to Chopta Tungnath Taxi',
+    desc: 'Scenic taxi service to the Switzerland of India, Chopta, and base of the sacred Tungnath Shiva Temple.',
+    price: '₹8,500',
+    type: 'One Way Pick/Drop',
+    link: '/packages',
+    image: '/images/chopta.jpg',
   },
 ];
 
