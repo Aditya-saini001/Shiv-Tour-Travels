@@ -46,14 +46,14 @@ export default function AboutPage() {
       capacity: '4 Passengers + 1 Driver',
       features: ['Air Conditioning', 'Ample Boot Space (2 Large Bags)', 'USB Charging', 'Music System'],
       rate: 'Starting ₹11/km or ₹2,200/day',
-      image: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=600&auto=format&fit=crop',
+      image: '/images/page-header.jpg',
     },
     {
       name: 'SUV (Maruti Suzuki Ertiga)',
       capacity: '6 Passengers + 1 Driver',
       features: ['Rear AC Vents', 'Spacious Legroom', 'Carrier on Roof for Luggage', 'Comfortable Suspension'],
       rate: 'Starting ₹15/km or ₹3,500/day',
-      image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=600&auto=format&fit=crop',
+      image: '/images/suv-ertiga.jpg',
     },
     {
       name: 'Premium MPV (Toyota Innova Crysta)',

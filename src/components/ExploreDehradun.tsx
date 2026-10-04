@@ -8,7 +8,7 @@ const spots = [
   {
     title: 'Sahastradhara Springs',
     desc: 'Famous for cascading waterfalls and therapeutic natural sulphur springs, easily accessible with our local city taxi package.',
-    image: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=600&auto=format&fit=crop',
+    image: '/images/sahastradhara.jpg',
     tag: 'Waterfalls & Healing Springs',
     direction: 'left' as const,
   },

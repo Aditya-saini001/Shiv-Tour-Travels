@@ -19,7 +19,7 @@ export default function PageHeader({ title, subtitle, breadcrumbs }: PageHeaderP
         className="absolute inset-0 bg-cover bg-center opacity-15"
         style={{
           backgroundImage:
-            'url(https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=2000&auto=format&fit=crop)',
+            'url(/images/page-header.jpg)',
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-darkbg-950 via-darkbg-900/90 to-darkbg-950" />

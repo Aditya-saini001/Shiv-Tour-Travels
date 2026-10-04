@@ -12,7 +12,7 @@ const slides = [
     description:
       'Experience safe, comfortable and punctual taxi rides in Dehradun and across Uttarakhand. 24/7 doorstep pickup, experienced chauffeurs, and sanitized cabs.',
     bgImage:
-      'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=2000&auto=format&fit=crop', // Luxury car on scenic road
+      '/images/page-header.jpg', // Luxury car on scenic road
     callText: 'Call Now: +91 9084712392',
   },
   {
@@ -85,12 +85,21 @@ export default function HeroSlider() {
               </div>
 
               {/* Main Heading with dynamic text */}
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight drop-shadow-md">
-                {slide.title}
-                <span className="block text-2xl sm:text-4xl lg:text-5xl gold-gradient-text mt-2">
-                  {slide.highlightText}
-                </span>
-              </h1>
+              {index === 0 ? (
+                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight drop-shadow-md">
+                  {slide.title}
+                  <span className="block text-2xl sm:text-4xl lg:text-5xl gold-gradient-text mt-2">
+                    {slide.highlightText}
+                  </span>
+                </h1>
+              ) : (
+                <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight drop-shadow-md">
+                  {slide.title}
+                  <span className="block text-2xl sm:text-4xl lg:text-5xl gold-gradient-text mt-2">
+                    {slide.highlightText}
+                  </span>
+                </h2>
+              )}
 
               {/* Description */}
               <p className="text-base sm:text-lg text-slate-200/90 leading-relaxed font-normal max-w-2xl drop-shadow">
