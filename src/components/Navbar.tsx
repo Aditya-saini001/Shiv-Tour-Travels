@@ -8,8 +8,6 @@ import {
   Menu,
   X,
   ChevronDown,
-  Car,
-  Sparkles,
 } from 'lucide-react';
 
 interface NavbarProps {
@@ -46,18 +44,22 @@ export default function Navbar({ onOpenDrawer }: NavbarProps) {
       className={`sticky top-0 z-40 w-full transition-all duration-300 ${
         isScrolled
           ? 'bg-darkbg-950/95 backdrop-blur-md shadow-2xl border-b border-taxi-500/20 py-2.5'
-          : 'bg-darkbg-900/90 backdrop-blur-sm border-b border-white/10 py-3.5'
+          : 'bg-darkbg-900/90 backdrop-blur-sm border-b border-white/10 py-3'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        {/* Brand Logo */}
+        {/* Brand Logo with Official User Logo */}
         <Link href="/" className="flex items-center space-x-3 group">
-          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-taxi-400 to-taxi-600 flex items-center justify-center text-black font-extrabold shadow-lg shadow-taxi-500/25 group-hover:scale-105 transition-transform duration-300">
-            <Car className="w-6 h-6 stroke-[2.5]" />
+          <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-taxi-400 shadow-lg shadow-taxi-500/25 group-hover:scale-105 transition-transform duration-300 shrink-0 bg-white">
+            <img
+              src="/images/logo.jpg"
+              alt="Shiv Shubh Tour & Travels Logo"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="flex flex-col">
             <span className="text-xl sm:text-2xl font-black tracking-tight text-white flex items-center gap-1.5">
-              SHIV <span className="text-taxi-400">TOUR & TRAVELS</span>
+              SHIV SHUBH <span className="text-taxi-400">TOUR & TRAVELS</span>
             </span>
             <span className="text-[10px] uppercase tracking-widest text-slate-400 font-semibold flex items-center gap-1">
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping" />
@@ -154,7 +156,7 @@ export default function Navbar({ onOpenDrawer }: NavbarProps) {
         <div className="flex items-center space-x-3">
           {/* Call Box */}
           <a
-            href="tel:+917819909454"
+            href="tel:+919084712392"
             className="hidden sm:flex items-center space-x-3 bg-gradient-to-r from-taxi-500/15 to-taxi-500/5 hover:from-taxi-500/25 hover:to-taxi-500/15 border border-taxi-500/30 px-3.5 py-2 rounded-xl transition-all duration-300 group"
           >
             <div className="w-9 h-9 rounded-lg bg-taxi-500 flex items-center justify-center text-black font-bold shadow-md shadow-taxi-500/30 group-hover:scale-110 transition-transform">
@@ -165,7 +167,7 @@ export default function Navbar({ onOpenDrawer }: NavbarProps) {
                 Call 24/7
               </span>
               <span className="block text-sm font-extrabold text-white tracking-tight group-hover:text-taxi-300 font-mono">
-                +91 7819909454
+                +91 9084712392
               </span>
             </div>
           </a>
@@ -216,14 +218,14 @@ export default function Navbar({ onOpenDrawer }: NavbarProps) {
 
           <div className="pt-3 border-t border-white/10 flex flex-col gap-2">
             <a
-              href="tel:+917819909454"
+              href="tel:+919084712392"
               className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-taxi-500 text-black font-extrabold shadow-lg"
             >
               <Phone className="w-4 h-4 fill-black" />
-              Call Now: +91 7819909454
+              Call Now: +91 9084712392
             </a>
             <a
-              href="https://wa.me/917819909454?text=Hello%20Shiv%20Tour%20%26%20Travels,%20I%20want%20to%20book%20a%20taxi%20in%20Dehradun."
+              href="https://wa.me/919084712392?text=Hello%20Shiv%20Shubh%20Tour%20%26%20Travels,%20I%20want%20to%20book%20a%20taxi%20in%20Dehradun."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-emerald-600 text-white font-extrabold shadow-lg"

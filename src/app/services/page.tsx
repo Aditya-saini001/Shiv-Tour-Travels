@@ -152,11 +152,11 @@ export default function ServicesPage() {
 
               <div className="flex flex-wrap items-center gap-3">
                 <a
-                  href="tel:+917819909454"
+                  href="tel:+919084712392"
                   className="px-6 py-3.5 rounded-xl bg-taxi-500 hover:bg-taxi-400 text-black font-extrabold text-sm transition-all shadow-md flex items-center gap-2"
                 >
                   <Phone className="w-4 h-4 fill-black" />
-                  <span>Call +91 7819909454</span>
+                  <span>Call +91 9084712392</span>
                 </a>
               </div>
             </div>

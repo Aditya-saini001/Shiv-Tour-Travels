@@ -8,33 +8,33 @@ import PageHeader from '@/components/PageHeader';
 import Footer from '@/components/Footer';
 import FloatingWidgets from '@/components/FloatingWidgets';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
-import { ChevronDown, Phone, MessageSquare, HelpCircle, ArrowRight } from 'lucide-react';
+import { ChevronDown, Phone } from 'lucide-react';
 
 const allFaqs = [
   {
     category: 'Booking & Fares',
     q: 'Which is the best taxi service in Dehradun?',
-    a: 'Shiv Tour & Travels delivers the best taxi service in Dehradun — fixed fares, professional drivers, clean vehicles, and 24/7 availability for city rides, airport transfers, and outstation trips across Uttarakhand. Unlike app-based aggregators, there is zero surge pricing. Call +91 7819909454 to book your ride instantly.',
+    a: 'Shiv Shubh Tour & Travels delivers the best taxi service in Dehradun — fixed fares, professional drivers, clean vehicles, and 24/7 availability for city rides, airport transfers, and outstation trips across Uttarakhand. Unlike app-based aggregators, there is zero surge pricing. Call +91 9084712392 to book your ride instantly.',
   },
   {
     category: 'Booking & Fares',
     q: 'What is the cheapest cab service in Dehradun?',
-    a: 'Shiv Tour & Travels offers the best taxi service in Dehradun at fixed, transparent fares — airport transfers from ₹899, Mussoorie/Rishikesh/Haridwar from ₹2,000, and Delhi from ₹4,000. No hidden charges, no cancellation penalties, and no surge pricing, ever.',
+    a: 'Shiv Shubh Tour & Travels offers the best taxi service in Dehradun at fixed, transparent fares — airport transfers from ₹899, Mussoorie/Rishikesh/Haridwar from ₹2,000, and Delhi from ₹4,000. No hidden charges, no cancellation penalties, and no surge pricing, ever.',
   },
   {
     category: 'Daily Rentals',
     q: 'What are the Dehradun taxi rates per day?',
-    a: 'Dehradun taxi rates per day at Shiv Tour & Travels (8 hours / 80 km package): Sedan (Dzire / Aura) ₹2,200, SUV (Ertiga) ₹3,500, Innova Crysta ₹5,000, Tempo Traveller 12-seater ₹6,000, and Tempo Traveller 17-seater ₹7,500. Standard extra km and hour rates apply for longer durations.',
+    a: 'Dehradun taxi rates per day at Shiv Shubh Tour & Travels (8 hours / 80 km package): Sedan (Dzire / Aura) ₹2,200, SUV (Ertiga) ₹3,500, Innova Crysta ₹5,000, Tempo Traveller 12-seater ₹6,000, and Tempo Traveller 17-seater ₹7,500. Standard extra km and hour rates apply for longer durations.',
   },
   {
     category: 'Outstation Routes',
     q: 'What is the best taxi service in Dehradun to Delhi?',
-    a: 'For Dehradun to Delhi, Shiv Tour & Travels offers guaranteed one-way fixed fares starting at ₹4,000 for a Sedan, ₹5,000 for an SUV, and ₹10,500 for an Innova Crysta. Punctual doorstep pickup, express toll route navigation, and courteous drivers.',
+    a: 'For Dehradun to Delhi, Shiv Shubh Tour & Travels offers guaranteed one-way fixed fares starting at ₹4,000 for a Sedan, ₹5,000 for an SUV, and ₹10,500 for an Innova Crysta. Punctual doorstep pickup, express toll route navigation, and courteous drivers.',
   },
   {
     category: 'Local Pickup',
     q: 'How do I find a taxi service near me in Dehradun?',
-    a: 'Shiv Tour & Travels operates across all localities of Dehradun — Clock Tower, Rajpur Road, ISBT, Prem Nagar, Clement Town, Sahastradhara Road, Ballupur, and Jakhan. Simply call or WhatsApp +91 7819909454 for cab arrival in 15 to 20 minutes.',
+    a: 'Shiv Shubh Tour & Travels operates across all localities of Dehradun — Chandrabani, Pithuwala, ISBT, Clock Tower, Rajpur Road, Prem Nagar, Clement Town, Sahastradhara Road, Ballupur, and Jakhan. Simply call or WhatsApp +91 9084712392 for cab arrival in 15 to 20 minutes.',
   },
   {
     category: 'Outstation Routes',
@@ -44,12 +44,12 @@ const allFaqs = [
   {
     category: 'Contact & Support',
     q: 'What is the Dehradun taxi service contact number?',
-    a: 'You can contact Shiv Tour & Travels directly at +91 7819909454 by phone call or WhatsApp, or by email at shivtravelsdehradun@gmail.com. Our helpline is open 24/7, 365 days a year for urgent rides and advance bookings.',
+    a: 'You can contact Shiv Shubh Tour & Travels directly at +91 9084712392 by phone call or WhatsApp, or by email at shivshubhtourtravel@gmail.com. Our helpline is open 24/7, 365 days a year for urgent rides and advance bookings.',
   },
   {
     category: 'Char Dham Pilgrimage',
     q: 'What is the Char Dham Yatra package from Dehradun?',
-    a: 'Char Dham Yatra covers the four holy Himalayan shrines — Yamunotri, Gangotri, Kedarnath, and Badrinath. Shiv Tour & Travels offers a complete 10–12 day pilgrimage package from Dehradun. Prices start at ₹38,000 for Sedan Dzire, ₹48,000 for Ertiga, and ₹62,000 for Innova Crysta. Call +91 7819909454 for customized itineraries.',
+    a: 'Char Dham Yatra covers the four holy Himalayan shrines — Yamunotri, Gangotri, Kedarnath, and Badrinath. Shiv Shubh Tour & Travels offers a complete 10–12 day pilgrimage package from Dehradun. Prices start at ₹38,000 for Sedan Dzire, ₹48,000 for Ertiga, and ₹62,000 for Innova Crysta. Call +91 9084712392 for customized itineraries.',
   },
   {
     category: 'Airport Transfer',
@@ -143,11 +143,11 @@ export default function FaqPage() {
                         <p>{faq.a}</p>
                         <div className="mt-4 pt-3 border-t border-white/5 flex items-center gap-4 text-xs font-semibold">
                           <a
-                            href="tel:+917819909454"
+                            href="tel:+919084712392"
                             className="text-taxi-400 hover:text-taxi-300 flex items-center gap-1.5"
                           >
                             <Phone className="w-3.5 h-3.5" />
-                            <span>Still have questions? Call +91 7819909454</span>
+                            <span>Still have questions? Call +91 9084712392</span>
                           </a>
                         </div>
                       </div>

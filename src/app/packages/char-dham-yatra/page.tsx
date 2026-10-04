@@ -8,10 +8,17 @@ import PageHeader from '@/components/PageHeader';
 import Footer from '@/components/Footer';
 import FloatingWidgets from '@/components/FloatingWidgets';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
-import { Mountain, Check, Phone, MessageSquare, ShieldCheck, MapPin, Calendar, Car, ArrowRight } from 'lucide-react';
+import { Mountain, Check, Phone, MessageSquare, Calendar, Car } from 'lucide-react';
 
 export default function CharDhamPage() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const shrines = [
+    { name: 'Yamunotri Dham', image: '/images/yamunotri.webp', desc: 'Seat of Goddess Yamuna, sacred hot sulphur springs at Surya Kund.' },
+    { name: 'Gangotri Dham', image: '/images/gangotri.jpg', desc: 'Origin of River Bhagirathi Ganga, pure white temple nestled in cedar groves.' },
+    { name: 'Kedarnath Dham', image: '/images/kedarnath.jpg', desc: 'Ancient Jyotirlinga of Lord Shiva at 3,583m amidst snow-capped peaks.' },
+    { name: 'Badrinath Dham', image: '/images/badrinath.jpg', desc: 'Abode of Lord Badri Vishal along the banks of holy Alaknanda river.' },
+  ];
 
   const itinerary = [
     { day: 'Day 01', route: 'Dehradun to Barkot (via Mussoorie & Kempty Falls)', desc: 'Scenic mountain drive to Barkot base camp (approx. 135 km / 5-6 hrs).' },
@@ -59,8 +66,39 @@ export default function CharDhamPage() {
                     Complete Char Dham Yatra <span className="gold-gradient-text">By Private Taxi</span>
                   </h2>
                   <p className="text-base text-slate-300 leading-relaxed font-normal">
-                    Embark on the divine journey of a lifetime with <strong className="text-white">Shiv Tour & Travels</strong>. Our Char Dham taxi package offers a private, stress-free pilgrimage across Uttarakhand’s four holiest shrines — Yamunotri, Gangotri, Kedarnath, and Badrinath. You travel at your own pace with a dedicated commercial AC cab and a hill-certified driver who assists you with route timings, parking, and temple visit schedules.
+                    Embark on the divine journey of a lifetime with <strong className="text-white">Shiv Shubh Tour & Travels</strong>. Our Char Dham taxi package offers a private, stress-free pilgrimage across Uttarakhand’s four holiest shrines — Yamunotri, Gangotri, Kedarnath, and Badrinath. You travel at your own pace with a dedicated commercial AC cab and a hill-certified driver who assists you with route timings, parking, and temple visit schedules.
                   </p>
+                </div>
+              </AnimateOnScroll>
+
+              {/* Four Sacred Dhams Photo Showcase */}
+              <AnimateOnScroll direction="up" duration={0.7}>
+                <div className="space-y-6">
+                  <h3 className="text-2xl font-bold text-white flex items-center gap-2">
+                    <Mountain className="w-6 h-6 text-taxi-400" />
+                    <span>The Four Sacred Himalayan Shrines</span>
+                  </h3>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {shrines.map((shrine, idx) => (
+                      <div key={idx} className="bg-darkbg-850 rounded-2xl overflow-hidden border border-white/10 group">
+                        <div className="relative h-44 overflow-hidden">
+                          <img
+                            src={shrine.image}
+                            alt={shrine.name}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-darkbg-850 via-transparent to-transparent" />
+                          <span className="absolute bottom-3 left-3 text-lg font-black text-white drop-shadow">
+                            {shrine.name}
+                          </span>
+                        </div>
+                        <div className="p-4">
+                          <p className="text-xs text-slate-300/80 leading-relaxed">{shrine.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </AnimateOnScroll>
 
@@ -119,8 +157,8 @@ export default function CharDhamPage() {
                         <p className="text-xs text-slate-400 mb-4">{c.capacity}</p>
                         <div className="text-2xl font-black text-taxi-400 font-mono mb-4">{c.price}</div>
                         <a
-                          href={`https://wa.me/917819909454?text=${encodeURIComponent(
-                            `Hello Shiv Tour & Travels, I want to book Char Dham Yatra in ${c.vehicle}.`
+                          href={`https://wa.me/919084712392?text=${encodeURIComponent(
+                            `Hello Shiv Shubh Tour & Travels, I want to book Char Dham Yatra in ${c.vehicle}.`
                           )}`}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -152,15 +190,15 @@ export default function CharDhamPage() {
 
                   <div className="space-y-3">
                     <a
-                      href="tel:+917819909454"
+                      href="tel:+919084712392"
                       className="w-full py-3.5 rounded-xl bg-taxi-500 hover:bg-taxi-400 text-black font-extrabold text-sm flex items-center justify-center gap-2 shadow-lg transition-transform hover:scale-105"
                     >
                       <Phone className="w-4 h-4 fill-black" />
-                      <span>Call: +91 7819909454</span>
+                      <span>Call: +91 9084712392</span>
                     </a>
 
                     <a
-                      href="https://wa.me/917819909454?text=Hello%20Shiv%20Tour%20%26%20Travels,%20I%20want%20to%20enquire%20about%20Char%20Dham%20Yatra%20package."
+                      href="https://wa.me/919084712392?text=Hello%20Shiv%20Shubh%20Tour%20%26%20Travels,%20I%20want%20to%20enquire%20about%20Char%20Dham%20Yatra%20package."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg transition-transform hover:scale-105"

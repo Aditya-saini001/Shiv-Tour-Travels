@@ -9,10 +9,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shivtourandtravels.com"),
-  title: "Best Taxi Service in Dehradun | Shiv Tour & Travels | 24/7 Cab Booking",
+  metadataBase: new URL("https://shivshubhtourtravels.com"),
+  title: "Best Taxi Service in Dehradun | Shiv Shubh Tour & Travels | 24/7 Cab Booking",
   description:
-    "Shiv Tour & Travels offers the best taxi service in Dehradun. 24/7 local cabs, Jolly Grant Airport taxi from ₹899, Dehradun to Delhi from ₹4000, Mussoorie, Rishikesh, Haridwar & Char Dham Yatra. Fixed fares, no surge pricing. Call +91 7819909454.",
+    "Shiv Shubh Tour & Travels offers the best taxi service in Dehradun. 24/7 local cabs, Jolly Grant Airport taxi from ₹899, Dehradun to Delhi from ₹4000, Mussoorie, Rishikesh, Haridwar & Char Dham Yatra. Fixed fares, no surge pricing. Call +91 9084712392.",
   keywords: [
     "best taxi service in Dehradun",
     "taxi service in dehradun",
@@ -24,12 +24,12 @@ export const metadata: Metadata = {
     "char dham yatra taxi dehradun",
     "outstation taxi dehradun",
     "car rental dehradun",
-    "shiv tour and travels",
-    "shiv travels dehradun",
+    "shiv shubh tour and travels",
+    "shiv shubh travels dehradun",
   ],
-  authors: [{ name: "Shiv Tour & Travels" }],
-  creator: "Shiv Tour & Travels",
-  publisher: "Shiv Tour & Travels",
+  authors: [{ name: "Shiv Shubh Tour & Travels" }],
+  creator: "Shiv Shubh Tour & Travels",
+  publisher: "Shiv Shubh Tour & Travels",
   robots: {
     index: true,
     follow: true,
@@ -44,20 +44,33 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://shivtourandtravels.com",
-    siteName: "Shiv Tour & Travels",
-    title: "Best Taxi Service in Dehradun | Shiv Tour & Travels",
+    url: "https://shivshubhtourtravels.com",
+    siteName: "Shiv Shubh Tour & Travels",
+    title: "Best Taxi Service in Dehradun | Shiv Shubh Tour & Travels",
     description:
-      "Reliable, punctual and fixed-fare taxi service in Dehradun for local, airport and outstation rides. Call +91 7819909454.",
+      "Reliable, punctual and fixed-fare taxi service in Dehradun for local, airport and outstation rides. Call +91 9084712392.",
+    images: [
+      {
+        url: "/images/logo.jpg",
+        width: 800,
+        height: 800,
+        alt: "Shiv Shubh Tour & Travels",
+      }
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Taxi Service in Dehradun | Shiv Tour & Travels",
+    title: "Best Taxi Service in Dehradun | Shiv Shubh Tour & Travels",
     description:
-      "Fixed fares, verified drivers, 24/7 local & outstation taxi in Dehradun. Call +91 7819909454.",
+      "Fixed fares, verified drivers, 24/7 local & outstation taxi in Dehradun. Call +91 9084712392.",
+    images: ["/images/logo.jpg"],
+  },
+  icons: {
+    icon: "/images/logo.jpg",
+    apple: "/images/logo.jpg",
   },
   alternates: {
-    canonical: "https://shivtourandtravels.com",
+    canonical: "https://shivshubhtourtravels.com",
   },
 };
 
@@ -70,31 +83,32 @@ export default function RootLayout({
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://shivtourandtravels.com/#business",
-    "name": "Shiv Tour & Travels",
-    "alternateName": "Shiv Travels Dehradun",
+    "@id": "https://shivshubhtourtravels.com/#business",
+    "name": "Shiv Shubh Tour & Travels",
+    "alternateName": "Shiv Shubh Travels Dehradun",
     "description":
       "Best taxi service in Dehradun offering local cab, Jolly Grant airport transfers, outstation rides, and complete Char Dham Yatra packages. Fixed fares, clean vehicles, no surge pricing, available 24/7.",
-    "url": "https://shivtourandtravels.com/",
-    "telephone": "+917819909454",
-    "email": "shivtravelsdehradun@gmail.com",
+    "url": "https://shivshubhtourtravels.com/",
+    "telephone": "+919084712392",
+    "email": "shivshubhtourtravel@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Near Clock Tower, Rajpur Road",
+      "streetAddress": "Union Bank Road, Chandrabani, Pithuwala",
       "addressLocality": "Dehradun",
       "addressRegion": "Uttarakhand",
-      "postalCode": "248001",
+      "postalCode": "248002",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "30.3256",
-      "longitude": "78.0437"
+      "latitude": "30.2762",
+      "longitude": "77.9892"
     },
     "priceRange": "₹899 - ₹62000",
     "openingHours": "Mo-Su 00:00-23:59",
     "currenciesAccepted": "INR",
     "paymentAccepted": "Cash, UPI, Net Banking, Credit Card",
+    "image": "https://shivshubhtourtravels.com/images/logo.jpg",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Taxi Services in Dehradun",
@@ -139,7 +153,6 @@ export default function RootLayout({
     }
   };
 
-  // FAQ Schema for AEO & Google AI Overview
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -149,63 +162,23 @@ export default function RootLayout({
         "name": "Which is the best taxi service in Dehradun?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Shiv Tour & Travels delivers the best taxi service in Dehradun with fixed fares, professional drivers, clean vehicles, and 24/7 availability for city rides, airport transfers, and outstation trips across Uttarakhand. Call +91 7819909454 to book."
+          "text": "Shiv Shubh Tour & Travels delivers the best taxi service in Dehradun with fixed fares, professional drivers, clean vehicles, and 24/7 availability for city rides, airport transfers, and outstation trips across Uttarakhand. Call +91 9084712392 to book."
         }
       },
       {
         "@type": "Question",
-        "name": "What is the cheapest cab service in Dehradun?",
+        "name": "What is the contact number of Shiv Shubh Tour & Travels?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Shiv Tour & Travels offers the most affordable cab service in Dehradun at fixed, transparent fares: airport transfers from ₹899, Mussoorie/Rishikesh/Haridwar from ₹2,000, and Delhi from ₹4,000 with zero surge pricing."
+          "text": "You can contact Shiv Shubh Tour & Travels 24/7 by calling or WhatsApp at +91 9084712392 or via email at shivshubhtourtravel@gmail.com."
         }
       },
       {
         "@type": "Question",
-        "name": "What are the Dehradun taxi rates per day?",
+        "name": "What is the address of Shiv Shubh Tour & Travels in Dehradun?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Daily rental rates at Shiv Tour & Travels (8 hours / 80 km): Sedan (Dzire/AURA) ₹2,200, SUV (Ertiga) ₹3,500, Innova Crysta ₹5,000, Tempo Traveller 12-seater ₹6,000, and 17-seater ₹7,500."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the best taxi service in Dehradun to Delhi?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "For Dehradun to Delhi, Shiv Tour & Travels offers fixed one-way fares starting at ₹4,000 for a Sedan, ₹5,000 for an SUV, and ₹10,500 for Innova Crysta. Punctual doorstep pickup and professional drivers."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I find a taxi service near me in Dehradun?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Shiv Tour & Travels covers all parts of Dehradun including Clock Tower, Rajpur Road, ISBT, Prem Nagar, Clement Town, Sahastradhara Road, and Ballupur. Call or WhatsApp +91 7819909454 for instant booking."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the outstation taxi service fare from Dehradun?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Outstation rates from Dehradun: Mussoorie ₹2,000 | Rishikesh ₹2,000 | Haridwar ₹2,000 | Delhi ₹4,000 | Chandigarh ₹3,500 | Auli ₹9,000 | Kedarnath ₹9,000 | Badrinath ₹10,500 | Char Dham Yatra from ₹38,000."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the Shiv Tour & Travels contact number in Dehradun?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can reach Shiv Tour & Travels 24/7 by call or WhatsApp at +91 7819909454 or via email at shivtravelsdehradun@gmail.com."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the Char Dham Yatra taxi package from Dehradun?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Complete 10–12 day Char Dham package from Dehradun covering Yamunotri, Gangotri, Kedarnath, and Badrinath starts from ₹38,000 for Dzire, ₹48,000 for Ertiga, and ₹62,000 for Innova Crysta. Call +91 7819909454 for custom quotes."
+          "text": "Shiv Shubh Tour & Travels is located at Union Bank Road, Chandrabani, Pithuwala, Dehradun, Uttarakhand - 248002."
         }
       }
     ]
@@ -214,6 +187,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <head>
+        <link rel="icon" href="/images/logo.jpg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}

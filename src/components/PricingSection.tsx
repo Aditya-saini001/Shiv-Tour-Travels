@@ -12,6 +12,7 @@ interface RouteCard {
   type: string;
   popular?: boolean;
   link: string;
+  image?: string;
 }
 
 const routes: RouteCard[] = [
@@ -22,6 +23,7 @@ const routes: RouteCard[] = [
     type: 'One Way Pick/Drop',
     popular: true,
     link: '/packages/dehradun-to-delhi-taxi',
+    image: '/images/delhi.jpg',
   },
   {
     title: 'Dehradun to Mussoorie Taxi',
@@ -30,10 +32,11 @@ const routes: RouteCard[] = [
     type: 'One Way Pick/Drop',
     popular: true,
     link: '/packages/dehradun-to-mussoorie-taxi',
+    image: '/images/mussoorie.jpg',
   },
   {
     title: 'Dehradun Airport Taxi (Jolly Grant)',
-    desc: 'Shiv Tour & Travels provides the best taxi service in Dehradun for airport pickups and drops — 24/7, fixed fares, no surge pricing for early-morning or late-night flights.',
+    desc: 'Shiv Shubh Tour & Travels provides the best taxi service in Dehradun for airport pickups and drops — 24/7, fixed fares, no surge pricing for early-morning or late-night flights.',
     price: '₹899',
     type: 'One Way Pick/Drop',
     popular: true,
@@ -52,6 +55,7 @@ const routes: RouteCard[] = [
     price: '₹4,999',
     type: 'One Way Pick/Drop',
     link: '/packages/dehradun-to-mussoorie-taxi',
+    image: '/images/mussoorie.jpg',
   },
   {
     title: 'Dehradun to Noida Taxi',
@@ -66,6 +70,7 @@ const routes: RouteCard[] = [
     price: '₹2,000',
     type: 'One Way Pick/Drop',
     link: '/pricing',
+    image: '/images/haridwar.jpg',
   },
   {
     title: 'Dehradun to Rishikesh Taxi',
@@ -73,6 +78,7 @@ const routes: RouteCard[] = [
     price: '₹2,000',
     type: 'One Way Pick/Drop',
     link: '/packages/dehradun-to-rishikesh-taxi',
+    image: '/images/rishikesh.jpg',
   },
   {
     title: 'Char Dham Yatra Taxi Package',
@@ -81,6 +87,15 @@ const routes: RouteCard[] = [
     type: 'Full Circuit / Custom Quote',
     popular: true,
     link: '/packages/char-dham-yatra',
+    image: '/images/kedarnath.jpg',
+  },
+  {
+    title: 'Dehradun to Chandigarh Taxi',
+    desc: 'Comfortable intercity cab from Dehradun to Chandigarh, Mohali, and Panchkula. Punctual, sanitized AC sedans and SUVs with fixed pricing.',
+    price: '₹3,500',
+    type: 'One Way Pick/Drop',
+    link: '/pricing',
+    image: '/images/chandigarh.jpg',
   },
 ];
 
@@ -88,7 +103,7 @@ export default function PricingSection() {
   const [activeTab, setActiveTab] = useState<'all' | 'outstation' | 'spiritual'>('all');
 
   const filteredRoutes = routes.filter((r) => {
-    if (activeTab === 'outstation') return r.title.includes('Delhi') || r.title.includes('Noida') || r.title.includes('Saharanpur');
+    if (activeTab === 'outstation') return r.title.includes('Delhi') || r.title.includes('Noida') || r.title.includes('Saharanpur') || r.title.includes('Chandigarh');
     if (activeTab === 'spiritual') return r.title.includes('Dham') || r.title.includes('Haridwar') || r.title.includes('Rishikesh');
     return true;
   });
@@ -106,7 +121,7 @@ export default function PricingSection() {
               Best Taxi Service in Dehradun — <span className="gold-gradient-text">Our Fixed Fares</span>
             </h2>
             <p className="mt-4 text-base text-slate-300 leading-relaxed">
-              Shiv Tour & Travels offers transparent, guaranteed fixed fares for every major destination. All base prices below are for comfortable AC Sedans (Dzire / Aura). Higher segment SUVs (Ertiga & Innova Crysta) and Tempo Travellers are readily available upon request.
+              Shiv Shubh Tour & Travels offers transparent, guaranteed fixed fares for every major destination. All base prices below are for comfortable AC Sedans (Dzire / Aura). Higher segment SUVs (Ertiga & Innova Crysta) and Tempo Travellers are readily available upon request.
             </p>
 
             {/* Quick Filter Tabs */}
@@ -119,7 +134,7 @@ export default function PricingSection() {
                     : 'bg-white/5 text-slate-300 hover:bg-white/10'
                 }`}
               >
-                All Popular Routes (9)
+                All Popular Routes
               </button>
               <button
                 onClick={() => setActiveTab('outstation')}
@@ -129,7 +144,7 @@ export default function PricingSection() {
                     : 'bg-white/5 text-slate-300 hover:bg-white/10'
                 }`}
               >
-                NCR / Long Distance
+                NCR & Outstation
               </button>
               <button
                 onClick={() => setActiveTab('spiritual')}
@@ -145,11 +160,11 @@ export default function PricingSection() {
           </div>
         </AnimateOnScroll>
 
-        {/* 9 Routes Grid with Staggered Scroll Animations (left, up, right) */}
+        {/* Routes Grid with Staggered Scroll Animations (left, up, right) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredRoutes.map((route, idx) => {
             const encodedMsg = encodeURIComponent(
-              `Hello Shiv Tour & Travels, I want to book: ${route.title} (${route.price} - ${route.type}). Please confirm availability.`
+              `Hello Shiv Shubh Tour & Travels, I want to book: ${route.title} (${route.price} - ${route.type}). Please confirm availability.`
             );
 
             // Alternate directions for eye-catching slide effect
@@ -165,12 +180,23 @@ export default function PricingSection() {
                   }`}
                 >
                   {route.popular && (
-                    <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-taxi-500/20 border border-taxi-500/40 text-taxi-300 text-[10px] font-black uppercase tracking-wider">
+                    <div className="absolute top-4 right-4 z-10 px-3 py-1 rounded-full bg-taxi-500 text-black text-[10px] font-black uppercase tracking-wider shadow">
                       High Demand
                     </div>
                   )}
 
                   <div>
+                    {route.image && (
+                      <div className="relative h-44 w-full rounded-2xl overflow-hidden mb-4 border border-white/10">
+                        <img
+                          src={route.image}
+                          alt={route.title}
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-darkbg-900/80 via-transparent to-transparent" />
+                      </div>
+                    )}
+
                     <Link href={route.link}>
                       <h3 className="text-xl font-black text-white mb-2 pr-12 hover:text-taxi-300 transition-colors">
                         {route.title}
@@ -200,7 +226,7 @@ export default function PricingSection() {
                     {/* Buttons */}
                     <div className="grid grid-cols-2 gap-2.5">
                       <a
-                        href={`https://wa.me/917819909454?text=${encodedMsg}`}
+                        href={`https://wa.me/919084712392?text=${encodedMsg}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-colors"
@@ -210,7 +236,7 @@ export default function PricingSection() {
                       </a>
 
                       <a
-                        href="tel:+917819909454"
+                        href="tel:+919084712392"
                         className="py-2.5 px-3 rounded-xl bg-taxi-500 hover:bg-taxi-400 text-black font-extrabold text-xs flex items-center justify-center gap-1.5 transition-colors shadow"
                       >
                         <Phone className="w-3.5 h-3.5 fill-black" />
@@ -246,11 +272,11 @@ export default function PricingSection() {
                   View Full Fare Matrix
                 </Link>
                 <a
-                  href="tel:+917819909454"
+                  href="tel:+919084712392"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-taxi-500 hover:bg-taxi-400 text-black font-extrabold text-xs sm:text-sm transition-all shadow-md shrink-0"
                 >
                   <Phone className="w-4 h-4 fill-black" />
-                  <span>Call: +91 7819909454</span>
+                  <span>Call: +91 9084712392</span>
                 </a>
               </div>
             </div>

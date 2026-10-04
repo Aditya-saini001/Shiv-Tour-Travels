@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Phone, Mail, MapPin, Instagram, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Facebook, Twitter, Clock } from 'lucide-react';
 
 export default function TopBar() {
   return (
@@ -10,30 +10,30 @@ export default function TopBar() {
         {/* Contact Links */}
         <div className="flex items-center space-x-6">
           <a
-            href="tel:+917819909454"
+            href="tel:+919084712392"
             className="flex items-center space-x-2 text-slate-300 hover:text-taxi-400 transition-colors"
           >
             <div className="w-6 h-6 rounded-full bg-taxi-500/10 flex items-center justify-center text-taxi-400">
               <Phone className="w-3.5 h-3.5" />
             </div>
-            <span className="font-medium">+91 7819909454</span>
+            <span className="font-medium font-mono">+91 9084712392</span>
           </a>
 
           <a
-            href="mailto:shivtravelsdehradun@gmail.com"
+            href="mailto:shivshubhtourtravel@gmail.com"
             className="flex items-center space-x-2 text-slate-300 hover:text-taxi-400 transition-colors"
           >
             <div className="w-6 h-6 rounded-full bg-taxi-500/10 flex items-center justify-center text-taxi-400">
               <Mail className="w-3.5 h-3.5" />
             </div>
-            <span>shivtravelsdehradun@gmail.com</span>
+            <span>shivshubhtourtravel@gmail.com</span>
           </a>
 
           <div className="flex items-center space-x-2 text-slate-400">
             <div className="w-6 h-6 rounded-full bg-taxi-500/10 flex items-center justify-center text-taxi-400">
               <MapPin className="w-3.5 h-3.5" />
             </div>
-            <span>Near Clock Tower, Rajpur Road, Dehradun</span>
+            <span>Union Bank Road, Chandrabani, Pithuwala, Dehradun</span>
           </div>
         </div>
 
@@ -44,15 +44,35 @@ export default function TopBar() {
             <span>24/7 Available for Bookings</span>
           </div>
 
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            className="w-7 h-7 rounded-full bg-white/5 hover:bg-taxi-500 hover:text-black flex items-center justify-center text-slate-300 transition-all duration-300"
-          >
-            <Instagram className="w-3.5 h-3.5" />
-          </a>
+          <div className="flex items-center space-x-2">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="w-7 h-7 rounded-full bg-white/5 hover:bg-taxi-500 hover:text-black flex items-center justify-center text-slate-300 transition-all duration-300"
+            >
+              <Instagram className="w-3.5 h-3.5" />
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="w-7 h-7 rounded-full bg-white/5 hover:bg-taxi-500 hover:text-black flex items-center justify-center text-slate-300 transition-all duration-300"
+            >
+              <Facebook className="w-3.5 h-3.5" />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter / X"
+              className="w-7 h-7 rounded-full bg-white/5 hover:bg-taxi-500 hover:text-black flex items-center justify-center text-slate-300 transition-all duration-300"
+            >
+              <Twitter className="w-3.5 h-3.5" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

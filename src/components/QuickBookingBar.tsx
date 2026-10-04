@@ -60,7 +60,7 @@ export default function QuickBookingBar() {
 
   const estimatedFare = Math.round(basePrice * carMultiplier * (tripType === 'roundtrip' ? 1.75 : 1));
 
-  const whatsappMessage = `*Taxi Booking Request - Shiv Tour & Travels*%0A%0A*Pickup:* ${pickup}%0A*Drop:* ${drop}%0A*Trip Type:* ${
+  const whatsappMessage = `*Taxi Booking Request - Shiv Shubh Tour & Travels*%0A%0A*Pickup:* ${pickup}%0A*Drop:* ${drop}%0A*Trip Type:* ${
     tripType === 'oneway' ? 'One Way' : 'Round Trip'
   }%0A*Vehicle:* ${carType}%0A*Date:* ${date}%0A*Estimated Fare:* ₹${estimatedFare.toLocaleString(
     'en-IN'
@@ -213,7 +213,7 @@ export default function QuickBookingBar() {
 
           <div className="flex flex-wrap items-center gap-3">
             <a
-              href={`https://wa.me/917819909454?text=${whatsappMessage}`}
+              href={`https://wa.me/919084712392?text=${whatsappMessage}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm transition-all shadow-lg shadow-emerald-600/30 hover:scale-105"
@@ -223,11 +223,11 @@ export default function QuickBookingBar() {
             </a>
 
             <a
-              href="tel:+917819909454"
+              href="tel:+919084712392"
               className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-taxi-500 hover:bg-taxi-400 text-black font-extrabold text-sm transition-all shadow-lg shadow-taxi-500/20 hover:scale-105"
             >
               <Phone className="w-4 h-4 fill-black" />
-              <span>Call +91 7819909454</span>
+              <span>Call +91 9084712392</span>
             </a>
           </div>
         </div>

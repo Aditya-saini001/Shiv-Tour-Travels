@@ -61,7 +61,7 @@ export default function CustomizedPackages() {
               Customized Taxi Packages in <span className="gold-gradient-text">Dehradun</span>
             </h2>
             <p className="mt-4 text-base text-slate-300 leading-relaxed font-normal">
-              At Shiv Tour & Travels, we craft tailored tour itineraries for families, corporate delegations, and solo backpackers across Uttarakhand — transparent packages with zero hidden fees.
+              At Shiv Shubh Tour & Travels, we craft tailored tour itineraries for families, corporate delegations, and solo backpackers across Uttarakhand — transparent packages with zero hidden fees.
             </p>
           </div>
         </AnimateOnScroll>
@@ -107,8 +107,8 @@ export default function CustomizedPackages() {
                     </div>
 
                     <a
-                      href={`https://wa.me/917819909454?text=${encodeURIComponent(
-                        `Hello Shiv Tour & Travels, I want to book the customized package: ${pkg.title} (${pkg.price}).`
+                      href={`https://wa.me/919084712392?text=${encodeURIComponent(
+                        `Hello Shiv Shubh Tour & Travels, I want to book the customized package: ${pkg.title} (${pkg.price}).`
                       )}`}
                       target="_blank"
                       rel="noopener noreferrer"

@@ -17,7 +17,7 @@ export default function MapSection() {
               Visit Our <span className="gold-gradient-text">Dehradun Office</span>
             </h2>
             <p className="mt-4 text-base text-slate-300 leading-relaxed font-normal">
-              Centrally situated near Clock Tower on Rajpur Road, Dehradun. Reach out anytime for instant walk-in bookings or 24/7 phone assistance.
+              Centrally situated at Union Bank Road, Chandrabani, Pithuwala, Dehradun. Reach out anytime for instant bookings or 24/7 phone assistance.
             </p>
           </div>
         </AnimateOnScroll>
@@ -30,7 +30,7 @@ export default function MapSection() {
                 <div className="space-y-6">
                   <h3 className="text-xl font-bold text-white flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-taxi-400" />
-                    Shiv Tour & Travels Headquarters
+                    Shiv Shubh Tour & Travels Headquarters
                   </h3>
 
                   <div className="space-y-4">
@@ -41,7 +41,7 @@ export default function MapSection() {
                       <div>
                         <h4 className="text-xs font-bold text-taxi-400 uppercase tracking-wider">Office Address</h4>
                         <p className="text-sm text-slate-200 mt-0.5">
-                          Near Clock Tower, Rajpur Road, Dehradun, Uttarakhand - 248001
+                          Union Bank Road, Chandrabani, Pithuwala, Dehradun, Uttarakhand - 248002
                         </p>
                       </div>
                     </div>
@@ -53,10 +53,10 @@ export default function MapSection() {
                       <div>
                         <h4 className="text-xs font-bold text-taxi-400 uppercase tracking-wider">Direct Phone</h4>
                         <a
-                          href="tel:+917819909454"
+                          href="tel:+919084712392"
                           className="text-sm font-bold text-white hover:text-taxi-400 transition-colors block mt-0.5 font-mono"
                         >
-                          +91 7819909454
+                          +91 9084712392
                         </a>
                       </div>
                     </div>
@@ -68,10 +68,10 @@ export default function MapSection() {
                       <div>
                         <h4 className="text-xs font-bold text-taxi-400 uppercase tracking-wider">Email Assistance</h4>
                         <a
-                          href="mailto:shivtravelsdehradun@gmail.com"
+                          href="mailto:shivshubhtourtravel@gmail.com"
                           className="text-sm text-slate-200 hover:text-taxi-400 transition-colors block mt-0.5"
                         >
-                          shivtravelsdehradun@gmail.com
+                          shivshubhtourtravel@gmail.com
                         </a>
                       </div>
                     </div>
@@ -92,7 +92,7 @@ export default function MapSection() {
 
                 <div className="pt-6 border-t border-white/10 flex flex-wrap gap-3">
                   <a
-                    href="https://maps.google.com/?q=Clock+Tower+Rajpur+Road+Dehradun+Uttarakhand"
+                    href="https://maps.google.com/?q=Union+Bank+Road+Chandrabani+Pithuwala+Dehradun+Uttarakhand+248002"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white text-xs font-bold border border-white/10 transition-colors"
@@ -103,7 +103,7 @@ export default function MapSection() {
                   </a>
 
                   <a
-                    href="tel:+917819909454"
+                    href="tel:+919084712392"
                     className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-taxi-500 hover:bg-taxi-400 text-black text-xs font-extrabold transition-colors shadow"
                   >
                     <Phone className="w-3.5 h-3.5 fill-black" />
@@ -119,8 +119,8 @@ export default function MapSection() {
             <AnimateOnScroll direction="right" duration={0.75} className="h-full">
               <div className="h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl relative min-h-[380px] bg-darkbg-900">
                 <iframe
-                  title="Shiv Tour & Travels Dehradun Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110204.60636845347!2d77.94709405!3d30.32556465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929c356c888af%3A0x4c3562c032518799!2sClock%20Tower%2C%20Dehradun%2C%20Uttarakhand%20248001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                  title="Shiv Shubh Tour & Travels Dehradun Location"
+                  src="https://maps.google.com/maps?q=Union+Bank+Road,+Chandrabani,+Pithuwala,+Dehradun,+Uttarakhand+248002&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0, minHeight: '400px' }}

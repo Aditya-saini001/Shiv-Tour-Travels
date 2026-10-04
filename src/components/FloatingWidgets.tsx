@@ -93,13 +93,13 @@ export default function FloatingWidgets() {
       {/* Floating Call Button (Bottom Left) */}
       <div className="fixed bottom-6 left-6 z-40">
         <a
-          href="tel:+917819909454"
-          aria-label="Call Shiv Tour & Travels directly"
+          href="tel:+919084712392"
+          aria-label="Call Shiv Shubh Tour & Travels directly"
           className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-taxi-500 to-amber-500 text-black shadow-2xl hover:scale-110 transition-transform duration-300 call-pulse group"
         >
           <Phone className="w-6 h-6 fill-black" />
           <span className="absolute left-16 bg-darkbg-900 border border-taxi-500/30 text-taxi-300 text-xs font-bold py-1.5 px-3 rounded-xl whitespace-nowrap shadow-xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-            Call +91 7819909454
+            Call +91 9084712392
           </span>
         </a>
       </div>
@@ -118,7 +118,7 @@ export default function FloatingWidgets() {
         )}
 
         <a
-          href="https://wa.me/917819909454?text=Hello%20Shiv%20Tour%20%26%20Travels,%20I%20want%20to%20book%20a%20taxi%20in%20Dehradun."
+          href="https://wa.me/919084712392?text=Hello%20Shiv%20Shubh%20Tour%20%26%20Travels,%20I%20want%20to%20book%20a%20taxi%20in%20Dehradun."
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat on WhatsApp"

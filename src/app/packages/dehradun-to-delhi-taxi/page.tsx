@@ -8,7 +8,7 @@ import PageHeader from '@/components/PageHeader';
 import Footer from '@/components/Footer';
 import FloatingWidgets from '@/components/FloatingWidgets';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
-import { Car, Clock, ShieldCheck, MapPin, Phone, MessageSquare, Check, ArrowRight } from 'lucide-react';
+import { Phone, MessageSquare, Check } from 'lucide-react';
 
 export default function DehradunToDelhiPage() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -37,14 +37,23 @@ export default function DehradunToDelhiPage() {
             <div className="lg:col-span-8 space-y-8">
               <AnimateOnScroll direction="left" duration={0.7}>
                 <div className="space-y-4">
-                  <span className="text-xs font-bold uppercase tracking-widest text-taxi-400 bg-taxi-500/10 px-3.5 py-1.5 rounded-full border border-taxi-500/20">
-                    Expressway Cab Booking
-                  </span>
+                  <div className="relative h-64 sm:h-80 rounded-3xl overflow-hidden border border-white/10 shadow-2xl mb-6">
+                    <img
+                      src="/images/delhi.jpg"
+                      alt="Dehradun to Delhi Taxi Route"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-darkbg-950 via-transparent to-transparent" />
+                    <span className="absolute bottom-4 left-4 text-xs font-bold uppercase tracking-widest text-taxi-400 bg-black/70 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-taxi-500/30">
+                      Expressway Cab Booking
+                    </span>
+                  </div>
+
                   <h2 className="text-3xl sm:text-4xl font-black text-white">
                     Reliable Dehradun to Delhi <span className="gold-gradient-text">Cab Booking</span>
                   </h2>
                   <p className="text-base text-slate-300 leading-relaxed font-normal">
-                    Looking for a dependable, fixed-rate cab from Dehradun to Delhi? <strong className="text-white">Shiv Tour & Travels</strong> offers the best one-way and round-trip taxi service between Dehradun and Delhi NCR. Whether you have an early morning flight at IGI Terminal 3, a business meeting in Connaught Place, or a family visit to Noida/Gurugram, our professional drivers ensure a relaxed, comfortable journey.
+                    Looking for a dependable, fixed-rate cab from Dehradun to Delhi? <strong className="text-white">Shiv Shubh Tour & Travels</strong> offers the best one-way and round-trip taxi service between Dehradun and Delhi NCR. Whether you have an early morning flight at IGI Terminal 3, a business meeting in Connaught Place, or a family visit to Noida/Gurugram, our professional drivers ensure a relaxed, comfortable journey.
                   </p>
                 </div>
               </AnimateOnScroll>
@@ -93,8 +102,8 @@ export default function DehradunToDelhiPage() {
                         <div className="flex items-center gap-4 self-end sm:self-auto">
                           <span className="text-2xl font-black text-taxi-400 font-mono">{r.price}</span>
                           <a
-                            href={`https://wa.me/917819909454?text=${encodeURIComponent(
-                              `Hello Shiv Tour & Travels, I want to book Dehradun to Delhi Taxi in ${r.model} (${r.price}).`
+                            href={`https://wa.me/919084712392?text=${encodeURIComponent(
+                              `Hello Shiv Shubh Tour & Travels, I want to book Dehradun to Delhi Taxi in ${r.model} (${r.price}).`
                             )}`}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -123,15 +132,15 @@ export default function DehradunToDelhiPage() {
                   </div>
 
                   <a
-                    href="tel:+917819909454"
+                    href="tel:+919084712392"
                     className="w-full py-3.5 rounded-xl bg-taxi-500 hover:bg-taxi-400 text-black font-extrabold text-sm flex items-center justify-center gap-2 shadow-lg"
                   >
                     <Phone className="w-4 h-4 fill-black" />
-                    <span>Call +91 7819909454</span>
+                    <span>Call +91 9084712392</span>
                   </a>
 
                   <a
-                    href="https://wa.me/917819909454?text=Hello%20Shiv%20Tour%20%26%20Travels,%20I%20want%20to%20book%20a%20Dehradun%20to%20Delhi%20Taxi."
+                    href="https://wa.me/919084712392?text=Hello%20Shiv%20Shubh%20Tour%20%26%20Travels,%20I%20want%20to%20book%20a%20Dehradun%20to%20Delhi%20Taxi."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg"

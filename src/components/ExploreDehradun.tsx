@@ -43,7 +43,7 @@ export default function ExploreDehradun() {
           <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-14 gap-6">
             <div className="max-w-2xl">
               <span className="inline-block text-xs font-bold uppercase tracking-widest text-taxi-400 bg-taxi-500/10 px-3.5 py-1.5 rounded-full border border-taxi-500/20 mb-3">
-                Shiv Tour & Travels Sightseeing
+                Shiv Shubh Tour & Travels Sightseeing
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
                 Explore Dehradun with the <span className="gold-gradient-text">Best Taxi Service</span>
@@ -54,11 +54,11 @@ export default function ExploreDehradun() {
             </div>
 
             <a
-              href="tel:+917819909454"
+              href="tel:+919084712392"
               className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-taxi-500 hover:bg-taxi-400 text-black font-extrabold text-sm transition-all self-start lg:self-auto shadow-lg shadow-taxi-500/20"
             >
               <Phone className="w-4 h-4 fill-black" />
-              <span>Book City Tour: +91 7819909454</span>
+              <span>Book City Tour: +91 9084712392</span>
             </a>
           </div>
         </AnimateOnScroll>
@@ -91,8 +91,8 @@ export default function ExploreDehradun() {
                   </div>
 
                   <a
-                    href={`https://wa.me/917819909454?text=${encodeURIComponent(
-                      `Hello Shiv Tour & Travels, I want to book a taxi for sightseeing to ${spot.title}.`
+                    href={`https://wa.me/919084712392?text=${encodeURIComponent(
+                      `Hello Shiv Shubh Tour & Travels, I want to book a taxi for sightseeing to ${spot.title}.`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"

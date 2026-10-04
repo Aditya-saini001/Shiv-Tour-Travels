@@ -8,7 +8,7 @@ import PageHeader from '@/components/PageHeader';
 import Footer from '@/components/Footer';
 import FloatingWidgets from '@/components/FloatingWidgets';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
-import { Star, Quote, ThumbsUp, ShieldCheck, Phone } from 'lucide-react';
+import { Star, Quote, Phone } from 'lucide-react';
 
 const reviews = [
   {
@@ -25,7 +25,7 @@ const reviews = [
     route: 'Haridwar to Rishikesh Trip',
     date: 'January 2026',
     stars: 5,
-    text: 'I’ve tried several taxi services in Haridwar, but Shiv Tour & Travels stands out for its punctuality and professionalism. The vehicle was spotless, comfortable, and the ride from Haridwar to Rishikesh was smooth throughout.',
+    text: 'I’ve tried several taxi services in Haridwar, but Shiv Shubh Tour & Travels stands out for its punctuality and professionalism. The vehicle was spotless, comfortable, and the ride from Haridwar to Rishikesh was smooth throughout.',
   },
   {
     name: 'Nitish Saini',
@@ -49,7 +49,7 @@ const reviews = [
     route: 'Char Dham Pilgrimage Circuit',
     date: 'November 2025',
     stars: 5,
-    text: 'Amazing experience with the best taxi service in Dehradun! The driver arrived on time, the car was spotless, and the entire ride was incredibly comfortable. Highly recommend Shiv Tour & Travels!',
+    text: 'Amazing experience with the best taxi service in Dehradun! The driver arrived on time, the car was spotless, and the entire ride was incredibly comfortable. Highly recommend Shiv Shubh Tour & Travels!',
   },
   {
     name: 'Sudarshan Kumar Mahiya',
@@ -115,11 +115,11 @@ export default function TestimonialsPage() {
               </div>
 
               <a
-                href="tel:+917819909454"
+                href="tel:+919084712392"
                 className="px-6 py-3.5 rounded-xl bg-taxi-500 hover:bg-taxi-400 text-black font-extrabold text-sm transition-all shadow-md flex items-center gap-2"
               >
                 <Phone className="w-4 h-4 fill-black" />
-                <span>Book a Ride: +91 7819909454</span>
+                <span>Book a Ride: +91 9084712392</span>
               </a>
             </div>
           </AnimateOnScroll>

@@ -17,8 +17,8 @@ export default function AboutSection() {
                 {/* Main Image */}
                 <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
                   <img
-                    src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1000&auto=format&fit=crop"
-                    alt="Shiv Tour & Travels Luxury Cab in Dehradun"
+                    src="/images/innova-crysta.jpg"
+                    alt="Shiv Shubh Tour & Travels Luxury Cab in Dehradun"
                     className="w-full h-[380px] sm:h-[450px] object-cover hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-darkbg-950 via-transparent to-transparent" />
@@ -27,8 +27,8 @@ export default function AboutSection() {
                 {/* Secondary Floating Thumbnail */}
                 <div className="absolute -bottom-6 -right-4 sm:-right-6 w-48 sm:w-60 rounded-2xl overflow-hidden border-2 border-taxi-500/50 shadow-2xl hidden sm:block">
                   <img
-                    src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=600&auto=format&fit=crop"
-                    alt="Uttarakhand Tour Cab"
+                    src="/images/mussoorie.jpg"
+                    alt="Uttarakhand Tour Cab Mussoorie"
                     className="w-full h-36 sm:h-44 object-cover"
                   />
                 </div>
@@ -50,15 +50,15 @@ export default function AboutSection() {
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-taxi-500/10 border border-taxi-500/20 text-taxi-400 text-xs font-bold uppercase tracking-widest">
                   <Award className="w-3.5 h-3.5" />
-                  <span>About Shiv Tour & Travels</span>
+                  <span>About Shiv Shubh Tour & Travels</span>
                 </div>
 
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
-                  Welcome to <span className="gold-gradient-text">Shiv Tour & Travels</span>
+                  Welcome to <span className="gold-gradient-text">Shiv Shubh Tour & Travels</span>
                 </h2>
 
                 <p className="text-base text-slate-300 leading-relaxed font-normal">
-                  Welcome to <strong className="text-white">Shiv Tour & Travels</strong>, your trusted travel partner in Dehradun for local city tours, airport transfers, and outstation cab bookings. Whether you&apos;re a tourist exploring the queen of hills Mussoorie, a pilgrim heading to Haridwar, Rishikesh and the holy Char Dham, or a business traveler needing a prompt airport pickup at Jolly Grant Airport, we are dedicated to making every journey smooth, comfortable, and memorable.
+                  Welcome to <strong className="text-white">Shiv Shubh Tour & Travels</strong>, your trusted travel partner in Dehradun for local city tours, airport transfers, and outstation cab bookings. Whether you&apos;re a tourist exploring the queen of hills Mussoorie, a pilgrim heading to Haridwar, Rishikesh and the holy Char Dham, or a business traveler needing a prompt airport pickup at Jolly Grant Airport, we are dedicated to making every journey smooth, comfortable, and memorable.
                 </p>
 
                 <p className="text-sm text-slate-400 leading-relaxed">
@@ -88,7 +88,7 @@ export default function AboutSection() {
                 {/* Bottom Call Box & Action */}
                 <div className="pt-6 border-t border-white/10 flex flex-wrap items-center gap-6">
                   <a
-                    href="tel:+917819909454"
+                    href="tel:+919084712392"
                     className="flex items-center space-x-3.5 bg-taxi-500/15 border border-taxi-500/30 hover:bg-taxi-500/25 px-5 py-3 rounded-2xl transition-all group"
                   >
                     <div className="w-10 h-10 rounded-xl bg-taxi-500 flex items-center justify-center text-black font-extrabold shadow group-hover:scale-110 transition-transform">
@@ -99,7 +99,7 @@ export default function AboutSection() {
                         Call Anytime 24/7
                       </span>
                       <span className="block text-base font-black text-white font-mono">
-                        +91 7819909454
+                        +91 9084712392
                       </span>
                     </div>
                   </a>

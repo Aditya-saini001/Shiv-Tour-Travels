@@ -85,8 +85,8 @@ export default function PricingPage() {
                         <td className="py-4 px-6 font-mono font-bold text-slate-200">{row.innova}</td>
                         <td className="py-4 px-6 text-center">
                           <a
-                            href={`https://wa.me/917819909454?text=${encodeURIComponent(
-                              `Hello Shiv Tour & Travels, I want to book: ${row.route}.`
+                            href={`https://wa.me/919084712392?text=${encodeURIComponent(
+                              `Hello Shiv Shubh Tour & Travels, I want to book: ${row.route}.`
                             )}`}
                             target="_blank"
                             rel="noopener noreferrer"

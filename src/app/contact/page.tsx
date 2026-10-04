@@ -8,7 +8,7 @@ import PageHeader from '@/components/PageHeader';
 import Footer from '@/components/Footer';
 import FloatingWidgets from '@/components/FloatingWidgets';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
-import { MapPin, Phone, Mail, Clock, Send, MessageSquare, CheckCircle2 } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, MessageSquare } from 'lucide-react';
 
 export default function ContactPage() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -24,8 +24,8 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `*New Website Inquiry - Shiv Tour & Travels*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Pickup:* ${formData.pickup}%0A*Drop:* ${formData.drop}%0A*Date:* ${formData.date}%0A*Message:* ${formData.message}`;
-    window.open(`https://wa.me/917819909454?text=${text}`, '_blank');
+    const text = `*New Website Inquiry - Shiv Shubh Tour & Travels*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Pickup:* ${formData.pickup}%0A*Drop:* ${formData.drop}%0A*Date:* ${formData.date}%0A*Message:* ${formData.message}`;
+    window.open(`https://wa.me/919084712392?text=${text}`, '_blank');
     setSubmitted(true);
   };
 
@@ -36,7 +36,7 @@ export default function ContactPage() {
       <SideDrawer isOpen={isDrawerOpen} onClose={() => setIsDrawerOpen(false)} />
 
       <PageHeader
-        title="Contact Shiv Tour & Travels"
+        title="Contact Shiv Shubh Tour & Travels"
         subtitle="24/7 Customer Support & Rapid Taxi Booking Desk in Dehradun"
         breadcrumbs={[{ name: 'Contact' }]}
       />
@@ -79,7 +79,7 @@ export default function ContactPage() {
                         <input
                           type="tel"
                           required
-                          placeholder="e.g. +91 98765 43210"
+                          placeholder="e.g. +91 90847 12392"
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           className="w-full bg-darkbg-950 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-taxi-400 transition-colors"
@@ -93,7 +93,7 @@ export default function ContactPage() {
                         <input
                           type="text"
                           required
-                          placeholder="e.g. Dehradun ISBT / Rajpur Road"
+                          placeholder="e.g. Dehradun ISBT / Chandrabani"
                           value={formData.pickup}
                           onChange={(e) => setFormData({ ...formData, pickup: e.target.value })}
                           className="w-full bg-darkbg-950 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-taxi-400 transition-colors"
@@ -163,7 +163,7 @@ export default function ContactPage() {
                       <div>
                         <h4 className="text-xs font-bold text-taxi-400 uppercase tracking-wider">Office Location</h4>
                         <p className="text-sm text-slate-200 mt-0.5">
-                          Near Clock Tower, Rajpur Road, Dehradun, Uttarakhand - 248001
+                          Union Bank Road, Chandrabani, Pithuwala, Dehradun, Uttarakhand - 248002
                         </p>
                       </div>
                     </div>
@@ -175,10 +175,10 @@ export default function ContactPage() {
                       <div>
                         <h4 className="text-xs font-bold text-taxi-400 uppercase tracking-wider">24/7 Phone Number</h4>
                         <a
-                          href="tel:+917819909454"
+                          href="tel:+919084712392"
                           className="text-base font-bold text-white hover:text-taxi-400 transition-colors block mt-0.5 font-mono"
                         >
-                          +91 7819909454
+                          +91 9084712392
                         </a>
                       </div>
                     </div>
@@ -190,10 +190,10 @@ export default function ContactPage() {
                       <div>
                         <h4 className="text-xs font-bold text-taxi-400 uppercase tracking-wider">Email Enquiries</h4>
                         <a
-                          href="mailto:shivtravelsdehradun@gmail.com"
+                          href="mailto:shivshubhtourtravel@gmail.com"
                           className="text-sm text-slate-200 hover:text-taxi-400 transition-colors block mt-0.5"
                         >
-                          shivtravelsdehradun@gmail.com
+                          shivshubhtourtravel@gmail.com
                         </a>
                       </div>
                     </div>
@@ -213,7 +213,7 @@ export default function ContactPage() {
 
                   <div className="pt-4 border-t border-white/10">
                     <a
-                      href="https://wa.me/917819909454?text=Hello%20Shiv%20Tour%20%26%20Travels,%20I%20have%20an%20inquiry."
+                      href="https://wa.me/919084712392?text=Hello%20Shiv%20Shubh%20Tour%20%26%20Travels,%20I%20have%20an%20inquiry."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg transition-transform hover:scale-105"
@@ -232,8 +232,8 @@ export default function ContactPage() {
             <AnimateOnScroll direction="up" duration={0.75}>
               <div className="rounded-3xl overflow-hidden border border-white/10 shadow-2xl h-[420px] bg-darkbg-900">
                 <iframe
-                  title="Shiv Tour & Travels Dehradun Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110204.60636845347!2d77.94709405!3d30.32556465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929c356c888af%3A0x4c3562c032518799!2sClock%20Tower%2C%20Dehradun%2C%20Uttarakhand%20248001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                  title="Shiv Shubh Tour & Travels Dehradun Location"
+                  src="https://maps.google.com/maps?q=Union+Bank+Road,+Chandrabani,+Pithuwala,+Dehradun,+Uttarakhand+248002&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

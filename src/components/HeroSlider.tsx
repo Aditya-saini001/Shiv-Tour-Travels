@@ -13,7 +13,7 @@ const slides = [
       'Experience safe, comfortable and punctual taxi rides in Dehradun and across Uttarakhand. 24/7 doorstep pickup, experienced chauffeurs, and sanitized cabs.',
     bgImage:
       'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=2000&auto=format&fit=crop', // Luxury car on scenic road
-    callText: 'Call Now: +91 7819909454',
+    callText: 'Call Now: +91 9084712392',
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const slides = [
     description:
       'Travel with complete comfort between Dehradun and Delhi NCR. Clean Sedans, spacious SUVs & Innova Crysta with courteous, hill-experienced drivers.',
     bgImage:
-      'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2000&auto=format&fit=crop', // Night highway / premium cab ride
+      '/images/delhi.jpg', // Delhi India Gate
     callText: 'Book Delhi Cab',
   },
   {
@@ -34,7 +34,7 @@ const slides = [
     description:
       'Prompt 24/7 transfers for early-morning or midnight flights at Jolly Grant Airport. Complete sacred Char Dham Yatra 10-12 day custom tour packages.',
     bgImage:
-      'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=2000&auto=format&fit=crop', // Majestic Kedarnath / Himalayas
+      '/images/kedarnath.jpg', // Majestic Kedarnath / Himalayas
     callText: 'Book Char Dham Tour',
   },
 ];
@@ -100,17 +100,17 @@ export default function HeroSlider() {
               {/* Buttons */}
               <div className="flex flex-wrap items-center gap-4 pt-3">
                 <a
-                  href="tel:+917819909454"
+                  href="tel:+919084712392"
                   className="inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl gold-gradient-bg text-black font-extrabold text-sm sm:text-base transition-all duration-300 shadow-xl shadow-taxi-500/30 hover:scale-105 hover:shadow-taxi-500/50"
                 >
                   <Phone className="w-5 h-5 fill-black" />
-                  <span>Call +91 7819909454</span>
+                  <span>Call +91 9084712392</span>
                   <ArrowRight className="w-4 h-4" />
                 </a>
 
                 <a
-                  href={`https://wa.me/917819909454?text=${encodeURIComponent(
-                    `Hello Shiv Tour & Travels, I want to book a taxi for: ${slide.title}`
+                  href={`https://wa.me/919084712392?text=${encodeURIComponent(
+                    `Hello Shiv Shubh Tour & Travels, I want to book a taxi for: ${slide.title}`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"

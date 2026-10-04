@@ -23,7 +23,7 @@ const services = [
     tag: 'Pilgrimage Special',
     title: 'Char Dham Yatra Taxi & Tour Packages',
     description:
-      'Plan your sacred pilgrimage with Shiv Tour & Travels — the premier taxi service in Dehradun for Char Dham Yatra. Well-maintained vehicles for Kedarnath, Badrinath, Gangotri, and Yamunotri.',
+      'Plan your sacred pilgrimage with Shiv Shubh Tour & Travels — the premier taxi service in Dehradun for Char Dham Yatra. Well-maintained vehicles for Kedarnath, Badrinath, Gangotri, and Yamunotri.',
     features: ['10–12 Day Full Circuit', 'Innova Crysta & Ertiga', 'Hill-Certified Chauffeurs'],
     actionText: 'View Packages from ₹38,000',
     routeTarget: '/packages/char-dham-yatra',
@@ -35,7 +35,7 @@ const services = [
     tag: 'Executive Mobility',
     title: 'Business & Corporate Travel in Dehradun',
     description:
-      'Shiv Tour & Travels is your trusted mobility partner for business meetings, conferences, and executive transfers with GST invoicing, punctual pickups, and zero last-minute cancellations.',
+      'Shiv Shubh Tour & Travels is your trusted mobility partner for business meetings, conferences, and executive transfers with GST invoicing, punctual pickups, and zero last-minute cancellations.',
     features: ['GST Billing Available', 'Spotless Executive Sedans', 'Priority Corporate Support'],
     actionText: 'Enquire Corporate Rates',
     routeTarget: '/contact',
@@ -47,7 +47,7 @@ const services = [
     tag: 'Jolly Grant 24/7',
     title: 'Airport Transfers & Train Pickups',
     description:
-      'Need an early-morning or midnight airport transfer? Shiv Tour & Travels delivers dependable airport pickups and drops to Jolly Grant Airport and Dehradun Railway Station at flat rates.',
+      'Need an early-morning or midnight airport transfer? Shiv Shubh Tour & Travels delivers dependable airport pickups and drops to Jolly Grant Airport and Dehradun Railway Station at flat rates.',
     features: ['Starting from ₹899 Only', 'Flight Delay Monitoring', 'Luggage Assistance'],
     actionText: 'Airport Taxi from ₹899',
     routeTarget: '/pricing',

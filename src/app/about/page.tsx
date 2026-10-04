@@ -8,7 +8,7 @@ import PageHeader from '@/components/PageHeader';
 import Footer from '@/components/Footer';
 import FloatingWidgets from '@/components/FloatingWidgets';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
-import { ShieldCheck, Award, Users, Car, CheckCircle2, Phone, ArrowRight, HeartHandshake, Clock } from 'lucide-react';
+import { ShieldCheck, Award, Users, Car, CheckCircle2, Phone, ArrowRight, Clock } from 'lucide-react';
 
 export default function AboutPage() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -60,7 +60,7 @@ export default function AboutPage() {
       capacity: '7 Passengers + 1 Driver',
       features: ['Captain Seats', 'Dual Climate AC', 'Superior Highway Ride', 'Ideal for Char Dham & Long Trips'],
       rate: 'Starting ₹20/km or ₹5,000/day',
-      image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=600&auto=format&fit=crop',
+      image: '/images/innova-crysta.jpg',
     },
   ];
 
@@ -71,7 +71,7 @@ export default function AboutPage() {
       <SideDrawer isOpen={isDrawerOpen} onClose={() => setIsDrawerOpen(false)} />
 
       <PageHeader
-        title="About Shiv Tour & Travels"
+        title="About Shiv Shubh Tour & Travels"
         subtitle="Dehradun’s Premier Taxi & Pilgrimage Tour Company Dedicated to Seamless Himalayan Travel"
         breadcrumbs={[{ name: 'About Us' }]}
       />
@@ -86,8 +86,8 @@ export default function AboutPage() {
                 <div className="relative">
                   <div className="rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
                     <img
-                      src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1000&auto=format&fit=crop"
-                      alt="Shiv Tour & Travels Team & Fleet"
+                      src="/images/innova-crysta.jpg"
+                      alt="Shiv Shubh Tour & Travels Team & Fleet"
                       className="w-full h-[420px] object-cover"
                     />
                   </div>
@@ -112,23 +112,23 @@ export default function AboutPage() {
                   </h2>
 
                   <p className="text-base text-slate-300 leading-relaxed font-normal">
-                    Founded with the vision to eliminate erratic pricing and unreliable cab services in Dehradun, <strong className="text-white">Shiv Tour & Travels</strong> has grown into the region&apos;s most reliable taxi partner for locals, corporate visitors, tourists, and pilgrims alike.
+                    Founded with the vision to eliminate erratic pricing and unreliable cab services in Dehradun, <strong className="text-white">Shiv Shubh Tour & Travels</strong> has grown into the region&apos;s most reliable taxi partner for locals, corporate visitors, tourists, and pilgrims alike.
                   </p>
 
                   <p className="text-sm text-slate-400 leading-relaxed">
-                    Headquartered near the iconic Clock Tower on Rajpur Road, Dehradun, our operations run 24 hours a day, 7 days a week. We take immense pride in our team of professional chauffeurs who possess comprehensive knowledge of every mountain pass, weather pattern, and local attraction throughout Uttarakhand.
+                    Headquartered at Union Bank Road, Chandrabani, Pithuwala, Dehradun, our operations run 24 hours a day, 7 days a week. We take immense pride in our team of professional chauffeurs who possess comprehensive knowledge of every mountain pass, weather pattern, and local attraction throughout Uttarakhand.
                   </p>
 
                   <div className="pt-2 flex flex-wrap gap-4">
                     <a
-                      href="tel:+917819909454"
+                      href="tel:+919084712392"
                       className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-taxi-500 hover:bg-taxi-400 text-black font-extrabold text-sm transition-all shadow-lg"
                     >
                       <Phone className="w-4 h-4 fill-black" />
-                      <span>Direct Call: +91 7819909454</span>
+                      <span>Direct Call: +91 9084712392</span>
                     </a>
                     <a
-                      href="https://wa.me/917819909454?text=Hello%20Shiv%20Tour%20%26%20Travels,%20I%20want%20to%20know%20more%20about%20your%20services."
+                      href="https://wa.me/919084712392?text=Hello%20Shiv%20Shubh%20Tour%20%26%20Travels,%20I%20want%20to%20know%20more%20about%20your%20services."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-all"
@@ -153,7 +153,7 @@ export default function AboutPage() {
                 Why Choose Us
               </span>
               <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
-                The 4 Pillars of <span className="gold-gradient-text">Shiv Tour & Travels</span>
+                The 4 Pillars of <span className="gold-gradient-text">Shiv Shubh Tour & Travels</span>
               </h2>
             </div>
           </AnimateOnScroll>
@@ -220,7 +220,7 @@ export default function AboutPage() {
                     <div className="pt-4 border-t border-white/10 flex items-center justify-between">
                       <span className="text-xs font-bold text-taxi-300 font-mono">{car.rate}</span>
                       <a
-                        href="tel:+917819909454"
+                        href="tel:+919084712392"
                         className="px-4 py-2 rounded-xl bg-taxi-500 text-black text-xs font-bold hover:bg-taxi-400 transition-colors"
                       >
                         Book Car

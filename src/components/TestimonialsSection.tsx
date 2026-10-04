@@ -20,7 +20,7 @@ const testimonials = [
     city: 'Karnal, Haryana',
     route: 'Haridwar to Rishikesh Trip',
     review:
-      'I’ve tried several taxi services in Haridwar, but Shiv Tour & Travels stands out for its punctuality and professionalism. The vehicle was spotless, comfortable, and the ride was smooth throughout.',
+      'I’ve tried several taxi services in Haridwar, but Shiv Shubh Tour & Travels stands out for its punctuality and professionalism. The vehicle was spotless, comfortable, and the ride was smooth throughout.',
     rating: 5,
     direction: 'up' as const,
   },
@@ -47,7 +47,7 @@ const testimonials = [
     city: 'Agra, Uttar Pradesh',
     route: 'Char Dham Pilgrimage Circuit',
     review:
-      'Amazing experience with the best taxi service in Dehradun! The driver arrived on time, the car was spotless, and the entire ride was incredibly comfortable. Highly recommend Shiv Tour & Travels!',
+      'Amazing experience with the best taxi service in Dehradun! The driver arrived on time, the car was spotless, and the entire ride was incredibly comfortable. Highly recommend Shiv Shubh Tour & Travels!',
     rating: 5,
     direction: 'up' as const,
   },
@@ -72,7 +72,7 @@ export default function TestimonialsSection() {
               Our Testimonials
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-              What People Say About <span className="gold-gradient-text">Shiv Tour & Travels</span>
+              What People Say About <span className="gold-gradient-text">Shiv Shubh Tour & Travels</span>
             </h2>
             <p className="mt-4 text-base text-slate-300 leading-relaxed font-normal">
               Real feedback from thousands of satisfied tourists, pilgrims, and families across India and abroad.

@@ -27,7 +27,7 @@ export default function AirportTransfers() {
                   </h2>
 
                   <p className="text-base text-slate-300 leading-relaxed font-normal">
-                    Shiv Tour & Travels provides dependable taxi service in Dehradun for Jolly Grant Airport pickups and drops, ensuring stress-free travel with supreme comfort, flight tracking, and 100% punctuality. We operate 24 hours a day, 7 days a week for all early-morning and midnight flights — fixed fares, zero night surcharges.
+                    Shiv Shubh Tour & Travels provides dependable taxi service in Dehradun for Jolly Grant Airport pickups and drops, ensuring stress-free travel with supreme comfort, flight tracking, and 100% punctuality. We operate 24 hours a day, 7 days a week for all early-morning and midnight flights — fixed fares, zero night surcharges.
                   </p>
 
                   {/* 4 Feature Points */}
@@ -60,7 +60,7 @@ export default function AirportTransfers() {
                       <CheckCircle2 className="w-5 h-5 text-taxi-400 shrink-0 mt-0.5" />
                       <div>
                         <strong className="block text-sm text-white">All Dehradun Localities</strong>
-                        <span className="text-xs text-slate-400">Rajpur Rd, ISBT, Prem Nagar, Clement Town, Ballupur.</span>
+                        <span className="text-xs text-slate-400">Chandrabani, Rajpur Rd, ISBT, Prem Nagar, Clement Town, Ballupur.</span>
                       </div>
                     </div>
                   </div>
@@ -68,15 +68,15 @@ export default function AirportTransfers() {
                   {/* Action Buttons */}
                   <div className="pt-4 flex flex-wrap items-center gap-4">
                     <a
-                      href="tel:+917819909454"
+                      href="tel:+919084712392"
                       className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-taxi-500 hover:bg-taxi-400 text-black font-extrabold text-sm transition-all shadow-lg shadow-taxi-500/25"
                     >
                       <Phone className="w-4 h-4 fill-black" />
-                      <span>Call Airport Helpline: +91 7819909454</span>
+                      <span>Call Airport Helpline: +91 9084712392</span>
                     </a>
 
                     <a
-                      href="https://wa.me/917819909454?text=Hello%20Shiv%20Tour%20%26%20Travels,%20I%20need%20an%20Airport%20Taxi%20for%20Jolly%20Grant%20Airport."
+                      href="https://wa.me/919084712392?text=Hello%20Shiv%20Shubh%20Tour%20%26%20Travels,%20I%20need%20an%20Airport%20Taxi%20for%20Jolly%20Grant%20Airport."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-all shadow-lg shadow-emerald-600/20"

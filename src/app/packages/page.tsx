@@ -20,7 +20,7 @@ const tourPackages = [
     price: '₹38,000',
     vehicle: 'Sedan Dzire (SUV & Crysta Available)',
     desc: 'The most sacred Himalayan pilgrimage. Includes full circuit transportation, experienced hill drivers, halt arrangements, and permit guidance.',
-    image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=800&auto=format&fit=crop',
+    image: '/images/kedarnath.jpg',
     popular: true,
     link: '/packages/char-dham-yatra',
     direction: 'left' as const,
@@ -33,7 +33,7 @@ const tourPackages = [
     price: '₹24,000',
     vehicle: 'AC Sedan / Ertiga SUV',
     desc: 'Focus on the two holiest Dhams. Safe driving through Rudraprayag and Sonprayag with timely darshan assistance.',
-    image: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=800&auto=format&fit=crop',
+    image: '/images/badrinath.jpg',
     popular: false,
     link: '/packages/char-dham-yatra',
     direction: 'up' as const,
@@ -46,7 +46,7 @@ const tourPackages = [
     price: '₹3,500',
     vehicle: 'Private AC Sedan',
     desc: 'Scenic drive up the Garhwal hills to Mussoorie. Enjoy iconic viewpoints, company garden, George Everest Peak, and Mall Road.',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800&auto=format&fit=crop',
+    image: '/images/mussoorie.jpg',
     popular: true,
     link: '/packages/dehradun-to-mussoorie-taxi',
     direction: 'right' as const,
@@ -59,7 +59,7 @@ const tourPackages = [
     price: '₹3,800',
     vehicle: 'Private AC Cab',
     desc: 'Immerse yourself in spirituality. Experience the world-renowned evening Ganga Aarti at Har Ki Pauri and Rishikesh ashrams in peace.',
-    image: 'https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=800&auto=format&fit=crop',
+    image: '/images/haridwar.jpg',
     popular: false,
     link: '/packages/dehradun-to-rishikesh-taxi',
     direction: 'left' as const,
@@ -115,7 +115,7 @@ export default function PackagesPage() {
                 All-Inclusive Packages
               </span>
               <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
-                Discover Uttarakhand with <span className="gold-gradient-text">Shiv Tour & Travels</span>
+                Discover Uttarakhand with <span className="gold-gradient-text">Shiv Shubh Tour & Travels</span>
               </h2>
               <p className="mt-4 text-base text-slate-300 leading-relaxed font-normal">
                 Choose from our popular customized tour itineraries below. All packages include dedicated commercial cabs, hill-trained chauffeurs, fuel, and toll assistance.
@@ -127,7 +127,7 @@ export default function PackagesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {tourPackages.map((pkg, idx) => {
               const encodedMsg = encodeURIComponent(
-                `Hello Shiv Tour & Travels, I am interested in booking the tour package: ${pkg.title} (${pkg.price}). Please share details.`
+                `Hello Shiv Shubh Tour & Travels, I am interested in booking the tour package: ${pkg.title} (${pkg.price}). Please share details.`
               );
 
               return (
@@ -180,7 +180,7 @@ export default function PackagesPage() {
 
                       <div className="pt-4 border-t border-white/10 flex flex-wrap items-center gap-3">
                         <a
-                          href={`https://wa.me/917819909454?text=${encodedMsg}`}
+                          href={`https://wa.me/919084712392?text=${encodedMsg}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="flex-1 py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-colors"
@@ -190,7 +190,7 @@ export default function PackagesPage() {
                         </a>
 
                         <a
-                          href="tel:+917819909454"
+                          href="tel:+919084712392"
                           className="py-3 px-5 rounded-xl bg-taxi-500 hover:bg-taxi-400 text-black font-extrabold text-xs flex items-center justify-center gap-1.5 transition-colors shadow"
                         >
                           <Phone className="w-4 h-4 fill-black" />
